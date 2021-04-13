@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -465,6 +466,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 .footer-links-wrapper {
