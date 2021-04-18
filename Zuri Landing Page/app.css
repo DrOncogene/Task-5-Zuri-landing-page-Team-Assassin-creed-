@@ -7,6 +7,20 @@
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  /* border: 1px solid green; */
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
 
 :root {
   --transition: 0.3s ease-in-out;
@@ -374,11 +388,15 @@ hr {
 }
 
 .test-info button {
-  padding: 20px 40px;
+  padding: 15px 50px;
   outline: none;
   border: 1px solid var(--lightPurple);
   background: transparent;
   font-size: 1.2rem;
+}
+
+.test-info button:hover {
+  box-shadow: 0px 0px 20px var(--footerColor);
 }
 
 .quote {
@@ -403,6 +421,7 @@ hr {
   width: 100%;
   height: 100%;
 }
+
 .quote-img-container {
   width: 100%;
   height: 100%;
@@ -412,6 +431,32 @@ hr {
   background-position: center;
 }
 
+#reg {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+#reg button {
+  width: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: var(--orangeColor);
+  color: var(--heroFontColor);
+  border-radius: 5px;
+  transform: var(--transition);
+  font-size: 1rem;
+}
+#reg button:hover {
+  opacity: 0.8;
+  transform: var(--transition);
+}
 .register {
   display: flex;
   flex-direction: column;
@@ -440,8 +485,51 @@ hr {
   display: none;
 }
 
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  position: relative;
+}
+
+.input-image {
+  width: 1rem;
+  height: 1rem;
+  background-image: url("./img/Right.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  position: absolute;
+  right: 1%;
+}
+
+.input-text {
+  margin-top: 5px;
+  transition: var(--transition);
+  background: transparent;
+  width: 100%;
+  font-size: 1rem;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.image-icon {
+  border: none;
+  outline: none;
+  padding: 0;
+  padding: 10px;
+  font-size: 1rem;
+  margin: 0;
+  margin-right: 2rem;
+}
+
+select option[disabled] {
+  display: none;
+}
+
 .danger {
-  background: 1px solid var(--colorred);
+  transition: var(--transition);
+  border: 1px solid red;
 }
 .showPara {
   display: block;
@@ -450,14 +538,7 @@ hr {
 .form-input {
   width: 100%;
   margin-bottom: 20px;
-}
-
-.form-input input,
-.form-input select {
-  padding: 10px;
-  width: 100%;
-  font-size: 1rem;
-  margin-top: 5px;
+  position: relative;
 }
 
 .footer {
@@ -645,6 +726,24 @@ hr {
   }
   .sponsors p {
     margin-top: 10px;
+  }
+  .foot a,
+  .foot p {
+    font-size: 1rem;
+  }
+
+  .foot h2 {
+    font-size: 1.2rem;
+  }
+
+  .sponsors {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sponsors p {
+    font-size: 1.2rem;
   }
 }
 

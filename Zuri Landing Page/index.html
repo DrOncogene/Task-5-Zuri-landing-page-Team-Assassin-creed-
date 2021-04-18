@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/8777cace87.js"
       crossorigin="anonymous"
     ></script>
+    <script src="countries.js"></script>
     <link href="app.css" rel="stylesheet" />
   </head>
   <body>
@@ -29,7 +30,7 @@
             <a href="#Home">Home</a>
             <a href="#Tracks">Tracks</a>
             <a href="#Testimonials">Testimonials</a>
-            <button type="submit" href="#Register">Register</button>
+            <a type="button" href="#Register">Register</a>
           </section>
         </nav>
       </header>
@@ -170,7 +171,7 @@
 
       <!-- Testimonials -->
       <section id="Testimonials" class="testimonial">
-        <h2>Tracks</h2>
+        <h2>Testimonials</h2>
         <p class="first-para">
           See what Zuri x I4G Alumni are saying about the training
         </p>
@@ -184,7 +185,7 @@
                 <h3>Ahmed Django</h3>
                 <h4>Front End Development</h4>
                 <p>
-                  <i>Trainging has never been more free, effective and fun!. Initially, i was skeptical about how thorough the training would be beeing free, but Zuri delivered excellently.</i>
+                  <i>Training has never been more free, effective and fun!. Initially, i was skeptical about how thorough the training would be beeing free, but Zuri delivered excellently.</i>
                 </p>
                 <button>View profile</button>
               </div>
@@ -214,7 +215,7 @@
                 <h3>chidi Bootstrap</h3>
                 <h4>Mobile App Development</h4>
                 <p>
-                  <i>Thanks to Zuri training, I have literally turned my life around. Before Zuri, I had no job,no skill, no purpose. All that today is, is history.</i>
+                  <i>Thanks to Zuri training, It has literally turned my life around. Before Zuri, I had no job, no skill, no purpose. i was just there roaming about. All that today is, is history.</i>
                 </p>
                 <button>View profile</button>
               </div>
@@ -239,109 +240,122 @@
         <p class="first-para">
          You are close to achieving your Tech career ambitions. Complete the form below to get started for free
         </p>
-        <form class="register-container">
-          <div class="firstname form-input">
-            <label for="firstname">FirstName:</label>
-            <input type="text" name="firstname" id="firstname" placeholder="john"/>
-            <p>please enter firstname</p>
+        <form  id="reg">
+          <div class="register-container">
+            <div class="firstname form-input">
+              <label for="firstname">FirstName:</label>
+            <div class="input-wrapper">
+              <input type="text" class='input-text image-icon' name="firstname" id="firstname" placeholder="john"/>
+              <div class="input-image"></div>
+            </div>
+              <p>Please enter firstname</p>
+            </div>
+            <div class="lastname form-input">
+              <label for="lastname">LastName:</label>
+            <div class="input-wrapper">
+              <input type="text" class='input-text image-icon' name="lastname" id="lastname" placeholder="doe"/>
+              <div class="input-image"></div>
+            </div>
+                <p>Please enter lastname</p>
+            </div>
+            <div class="phonenumber form-input">
+              <label for="phonenumber">PhoneNumber:</label>
+            <div class="input-wrapper">
+              <input type="text" class='input-text image-icon' name="phonenumber" id="phonenumber" placeholder="+2348106257884"/>
+              <div class="input-image"></div>
+            </div>
+                <p>Please enter phonenumber</p>
+            </div>
+            <div class="Email form-input">
+              <label for="email">Email:</label>
+            <div class="input-wrapper">
+              <input type="text" class='input-text image-icon' name="Email" id="Email" placeholder="johndoe@gmail.com"/>
+              <div class="input-image"></div>
+            </div>
+                <p>Please enter a valid email</p>
+            </div>
+            <div class="gender form-input">
+              <label for="gender">Gender:</label>
+              <select class='input-text' name='gender' id='gender'>
+                <option value="" disabled selected>Please choose gender</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+              </select>
+              <p>Please select a gender</p>
+            </div>
+            <div class="age form-input">
+              <label for="age">Age:</label>
+              <select class='input-text' name='age' id='age'>
+                <option value="" disabled selected>Please select age group</option>
+                <option value="child">0-10</option>
+                <option value="teenager">11-20</option>
+                <option value="youth">21-30</option>
+                <option value="adult">31-40</option>
+              </select>
+              <p>Please select your age</p>
+            </div>
+            <div class="country form-input">
+              <label for="country2">Country:</label>
+              <select class='input-text' name='country2' id='country2'>
+              </select>
+              <p>Please select a Country</p>
+            </div>
+            <div class="Track form-input">
+              <label for="Track">Track:</label>
+              <select class='input-text' name='Track' id='gender'>
+                <option value=""  disabled selected>Please choose your preffered track</option>
+                <option value="frontend">Frontend</option>
+                <option value="backend">Backend</option>
+                <option value="Design">Design</option>
+                <option value="Mobile">Mobile Development</option>
+              </select>
+              <p>Please select a Track</p>
+            </div>
+            <div class="experience form-input">
+              <label for="experience">Experience Level:</label>
+              <select class='input-text' name='experience' id='experience'>
+                <option value="" disabled selected>Please choose your level of experience</option>
+                <option value="beginner">Begginer</option>
+                <option value="intermediate">intermediate</option>
+                <option value="expert">expert</option>
+              </select>
+              <p>Please select an experience</p>
+            </div>
+            <div class="education form-input">
+              <label for="education">Education Level:</label>
+              <select  class='input-text' name='education' id='education'>
+                <option value="" disabled selected>Please choose your level of education</option>
+                <option value="graduate">Graduate</option>
+                <option value="undergraduate">Undergraduate</option>
+                <option value="postFraduate">Postgraduate</option>
+              </select>
+              <p>Please select a your educational experience</p>
+            </div>
+            <div class="employment form-input">
+              <label for="employment">Employment status:</label>
+              <select class='input-text' name='employment' id='employment'>
+                <option value="" disabled selected>Please choose your employment status</option>
+                <option value="student">Student</option>
+                <option value="selfEmploy">self Employed</option>
+              </select>
+              <p>Please select a your employment status</p>
+            </div>
+            <div class="hear form-input">
+              <label for="hear">How did you hear about us?</label>
+              <select class='input-text' name='hear' id='hear'>
+                <option value="" disabled selected>Please choose from the options</option>
+                <option value="socialMedia">Social Media</option>
+                <option value="whatsapp">Whatsapp</option>
+              </select>
+              <p>Please select how you heard us</p>
+            </div>
           </div>
-          <div class="lastname form-input">
-            <label for="lastname">LastName:</label>
-            <input type="text" name="lastname" id="lastname" placeholder="doe"/>
-              <p>please enter lastname</p>
-          </div>
-          <div class="phonenumber form-input">
-            <label for="phonenumber">PhoneNumber:</label>
-            <input type="text" name="phonenumber" id="phonenumber" placeholder="+2348106257884"/>
-              <p>please enter phonenumber</p>
-          </div>
-          <div class="Email form-input">
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" placeholder="johndoe@gmail.com"/>
-              <p>please enter email</p>
-          </div>
-          <div class="gender form-input">
-            <label for="gender">Gender:</label>
-            <select name='gender' id='gender'>
-              <option value="" disabled selected>please choose gender</option>
-              <option value="male">male</option>
-              <option value="female">female</option>
-            </select>
-            <p>please select a gender</p>
-          </div>
-          <div class="age form-input">
-            <label for="age">Age:</label>
-            <select name='age' id='age'>
-              <option value="" disabled selected>please select age group</option>
-              <option value="child">0-10</option>
-              <option value="teenager">11-20</option>
-              <option value="youth">21-30</option>
-              <option value="adult">31-40</option>
-            </select>
-            <p>please select your age</p>
-          </div>
-          <div class="country form-input">
-            <label for="country">Country:</label>
-            <select name='country' id='country'>
-               <option value="" disabled selected>please choose country</option>
-              <option value="male">male</option>
-              <option value="female">female</option>
-            </select>
-            <p>please select a country</p>
-          </div>
-          <div class="Track form-input">
-            <label for="Track">Track:</label>
-            <select name='Track' id='gender'>
-              <option value="" disabled selected>please choose your preffered track</option>
-              <option value="frontend">Frontend</option>
-              <option value="backend">Backend</option>
-              <option value="Design">Design</option>
-              <option value="Mobile">Mobile Development</option>
-            </select>
-            <p>please select a Track</p>
-          </div>
-          <div class="experience form-input">
-            <label for="experience">Experience Level:</label>
-            <select name='experience' id='experience'>
-              <option value="" disabled selected>please choose your level of experience</option>
-              <option value="beginner">Begginer</option>
-              <option value="intermediate">intermediate</option>
-              <option value="expert">expert</option>
-            </select>
-            <p>please select an experience</p>
-          </div>
-          <div class="education form-input">
-            <label for="education">Education Level:</label>
-            <select name='education' id='education'>
-              <option value="" disabled selected>please choose your level of education</option>
-              <option value="graduate">Graduate</option>
-              <option value="undergraduate">Undergraduate</option>
-              <option value="postFraduate">Postgraduate</option>
-            </select>
-            <p>please select a your educational experience</p>
-          </div>
-          <div class="employment form-input">
-            <label for="employment">Employment status:</label>
-            <select name='employment' id='employment'>
-              <option value="" disabled selected>please choose your employment status</option>
-              <option value="student">Student</option>
-              <option value="selfEmploy">self Employed</option>
-            </select>
-            <p>please select a your employment status</p>
-          </div>
-          <div class="hear form-input">
-            <label for="hear">How did you hear about us?</label>
-            <select name='hear' id='hear'>
-              <option value="" disabled selected>please choose from the options</option>
-              <option value="socialMedia">Social Media</option>
-              <option value="whatsapp">Whatsapp</option>
-            </select>
-            <p>please select how you heard us</p>
-          </div>
+          <button type="submit" id="reg">Register</button>
         </form>
       </section>
-
     </div>
+
+
      <footer id="footer" class="footer">
         <div class="footer-container">
           <div class="footer-links-wrapper">
@@ -392,7 +406,12 @@
           </div>
         </div>
       </footer>
-       <p style="text-align: center; margin:10px auto;">&copy; Zuri training <span id="copyright">2021</span></p>
+       <p style="text-align: center; margin:10px auto">&copy; Zuri training <span id="copyright">2021</span></p>
     <script type="module" src="./app.js"></script>
+
+    <script language="javascript">
+				//populateCountries("country", "state");
+				populateCountries("country2");
+			</script>
   </body>
 </html>
