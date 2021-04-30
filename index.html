@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zuri</title>
+    <script
+      src="https://kit.fontawesome.com/8777cace87.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="app.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Body Wrapper -->
+    <div class="wrapper">
+      <!-- Header Sction -->
+      <header id="Home">
+        <nav>
+          <section class="mobileContainer">
+            <div class="logo-container">
+              <img src="./img/Logo.png" alt="Logo" />
+            </div>
+            <div class="navToggle" id="mobileToggle">
+              <i class="fas fa-bars"></i>
+              <i class="fas fa-times"></i>
+            </div>
+          </section>
+          <section class="nav-container">
+            <a href="#Home">Home</a>
+            <a href="#Tracks">Tracks</a>
+            <a href="#Testimonials">Testimonials</a>
+            <button type="submit" href="#Register">Register</button>
+          </section>
+        </nav>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-wrapper">
+          <h1>Get Tech training, mentorship and job placement for free.</h1>
+          <p>
+            Basic introduction to software development and design aimed at
+            complete beginers which anyone can join<span id="dots">...</span><span id='more'>. Each week you</span> 
+            <button type="button" id="readmore">Read More</button>
+          </p>
+          <button type="submit">Register Now</button>
+        </div>
+        <div></div>
+      </section>
+
+      <!-- why Zuri Section -->
+      <section class="why-us">
+        <div class="why-us-header">
+          <h2>Why Zuri Training</h2>
+          <div class="chat-container">
+            <img src="./img/chat.png" alt="Chat Icon" />
+          </div>
+        </div>
+        <div class="p-info">
+          <p>
+            At Zuri Training, you gain access to enough knowledge to introduce
+            and aid your success in the tech industry.
+          </p>
+        </div>
+        <p>
+          The Program is a 4-month long program aimed at getting you started in
+          the industry. we understand it is impossible to become an expert at
+          anyting in just four months. However, we promise to give you
+          everything to get you started and scale. So far, over 800 trainees
+          have been graduted with more than 1000 connected to jobs.
+        </p>
+        <!-- Loading from javascript -->
+        <!-- <div class="grid-section">
+          <div class="grid-items">
+            <div class="img-container">
+              <img src="./img/laptop.png" alt="Laptop" />
+            </div>
+            <p>Fully remote</p>
+          </div>
+        </div> -->
+      </section>
+
+      <!-- Tracks -->
+      <section id="Tracks" class="tracks">
+        <h2>Tracks</h2>
+        <p class="first-para">
+          At Zuri Training, you gain access to enough knowledge to introduce and
+          aid your success in any of the below area bof the tech industry
+        </p>
+        <div class="tracks-container">
+          <div class="tracks-items">
+            <div class="tracks-header">
+              <p class="tracks-p">Front End Development</p>
+              <hr />
+              <div class="lang">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JAVASCRIPT</p>
+              </div>
+            </div>
+            <div class="tracks-info">
+              <p>
+                This track deals with the aspect of your application that the
+                users interact with.
+              </p>
+              <p>
+                A Front-end Developer will be able to correctly interpret a
+                given design to the user interface
+              </p>
+              <button type="button">See Curriculum</button>
+            </div>
+          </div>
+          <div class="tracks-items">
+            <div class="tracks-header">
+              <p class="tracks-p">Back End Development</p>
+              <hr />
+              <div class="lang">
+                <p>PHP</p>
+                <p>PHYTON</p>
+                <p>JAVASCRIPT</p>
+              </div>
+            </div>
+            <div class="tracks-info">
+              <p>
+                This track deals with the aspect of the application the user does not interact with.
+              </p>
+              <p>it allows the frontend function either by running some backend code or connecting to database.</p>
+              <button type="button">See Curriculum</button>
+            </div>
+          </div>
+          <div class="tracks-items">
+            <div class="tracks-header">
+              <p class="tracks-p">Mobile Development</p>
+              <hr />
+              <div class="lang">
+                <p>FLUTTTER</p>
+                <p>KOTLIN</p>
+                <p>JAVA</p>
+              </div>
+            </div>
+            <div class="tracks-info">
+              <p>
+              The mobile track contains a list of tools and languages needed for a developer to create mobile applicaitions.
+              </p>
+              <p>
+               A mobile application can be either IOS or Andriod.
+              </p>
+              <button type="button">See Curriculum</button>
+            </div>
+          </div>
+          <div class="tracks-items">
+            <div class="tracks-header">
+              <p class="tracks-p">Design</p>
+              <hr />
+              <div class="lang">
+                <p>FIGMA</p>
+                <P>ADOBE XD</P>
+              </div>
+            </div>
+            <div class="tracks-info">
+              <p>
+                This tracks deals with creating a graphic plan for an application.
+              </p>
+              <p>
+                You will learn to convert project documentation into viewable and understandable graphic design for the deveopers to work with.
+              </p>
+              <button type="button">See Curriculum</button>
+            </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section id="Testimonials" class="testimonial">
+        <h2>Tracks</h2>
+        <p class="first-para">
+          See what Zuri x I4G Alumni are saying about the training
+        </p>
+        <div class="test-wrapper">
+          <article class="test-container">
+            <div class="test-items">
+              <div class="test-img-container">
+                <img src="./img/person 3.png" alt="Ahmed">
+              </div>
+              <div class="test-info">
+                <h3>Ahmed Django</h3>
+                <h4>Front End Development</h4>
+                <p>
+                  <i>Trainging has never been more free, effective and fun!. Initially, i was skeptical about how thorough the training would be beeing free, but Zuri delivered excellently.</i>
+                </p>
+                <button>View profile</button>
+              </div>
+            </div>
+          </article>
+          <article class="test-container">
+            <div class="test-items">
+              <div class="test-img-container">
+                <img src="./img/person 1.png" alt="Bolaji">
+              </div>
+              <div class="test-info">
+                <h3>Bolaji Figma</h3>
+                <h4>Design</h4>
+                <p>
+                  <i>Before Zuri, I knew nothing about design or programming, After two months, I felt quite comfortable going solo on tech projects or collaborating with others.</i>
+                </p>
+                <button>View profile</button>
+              </div>
+            </div>
+          </article>
+          <article class="test-container">
+            <div class="test-items">
+              <div class="test-img-container">
+                <img src="./img/person 2.png" alt="Chidi">
+              </div>
+              <div class="test-info">
+                <h3>chidi Bootstrap</h3>
+                <h4>Mobile App Development</h4>
+                <p>
+                  <i>Thanks to Zuri training, I have literally turned my life around. Before Zuri, I had no job,no skill, no purpose. All that today is, is history.</i>
+                </p>
+                <button>View profile</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="quote">
+          <div class="quote-info">
+            <p>Beginner or intermediate;</p>
+            <p>It doesn't matter. Gain the Knowledge, network and mentorship needed to scale in the Tech industry.</p>
+          </div>
+          <div class="quote-wrapper-img">
+            <div class="quote-img-container">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Register section -->
+      <section id="Register" class="register">
+        <h2>Register</h2>
+        <p class="first-para">
+         You are close to achieving your Tech career ambitions. Complete the form below to get started for free
+        </p>
+        <form class="register-container">
+          <div class="firstname form-input">
+            <label for="firstname">FirstName:</label>
+            <input type="text" name="firstname" id="firstname" placeholder="john"/>
+            <p>please enter firstname</p>
+          </div>
+          <div class="lastname form-input">
+            <label for="lastname">LastName:</label>
+            <input type="text" name="lastname" id="lastname" placeholder="doe"/>
+              <p>please enter lastname</p>
+          </div>
+          <div class="phonenumber form-input">
+            <label for="phonenumber">PhoneNumber:</label>
+            <input type="text" name="phonenumber" id="phonenumber" placeholder="+2348106257884"/>
+              <p>please enter phonenumber</p>
+          </div>
+          <div class="Email form-input">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="johndoe@gmail.com"/>
+              <p>please enter email</p>
+          </div>
+          <div class="gender form-input">
+            <label for="gender">Gender:</label>
+            <select name='gender' id='gender'>
+              <option value="" disabled selected>please choose gender</option>
+              <option value="male">male</option>
+              <option value="female">female</option>
+            </select>
+            <p>please select a gender</p>
+          </div>
+          <div class="age form-input">
+            <label for="age">Age:</label>
+            <select name='age' id='age'>
+              <option value="" disabled selected>please select age group</option>
+              <option value="child">0-10</option>
+              <option value="teenager">11-20</option>
+              <option value="youth">21-30</option>
+              <option value="adult">31-40</option>
+            </select>
+            <p>please select your age</p>
+          </div>
+          <div class="country form-input">
+            <label for="country">Country:</label>
+            <select name='country' id='country'>
+               <option value="" disabled selected>please choose country</option>
+              <option value="male">male</option>
+              <option value="female">female</option>
+            </select>
+            <p>please select a country</p>
+          </div>
+          <div class="Track form-input">
+            <label for="Track">Track:</label>
+            <select name='Track' id='gender'>
+              <option value="" disabled selected>please choose your preffered track</option>
+              <option value="frontend">Frontend</option>
+              <option value="backend">Backend</option>
+              <option value="Design">Design</option>
+              <option value="Mobile">Mobile Development</option>
+            </select>
+            <p>please select a Track</p>
+          </div>
+          <div class="experience form-input">
+            <label for="experience">Experience Level:</label>
+            <select name='experience' id='experience'>
+              <option value="" disabled selected>please choose your level of experience</option>
+              <option value="beginner">Begginer</option>
+              <option value="intermediate">intermediate</option>
+              <option value="expert">expert</option>
+            </select>
+            <p>please select an experience</p>
+          </div>
+          <div class="education form-input">
+            <label for="education">Education Level:</label>
+            <select name='education' id='education'>
+              <option value="" disabled selected>please choose your level of education</option>
+              <option value="graduate">Graduate</option>
+              <option value="undergraduate">Undergraduate</option>
+              <option value="postFraduate">Postgraduate</option>
+            </select>
+            <p>please select a your educational experience</p>
+          </div>
+          <div class="employment form-input">
+            <label for="employment">Employment status:</label>
+            <select name='employment' id='employment'>
+              <option value="" disabled selected>please choose your employment status</option>
+              <option value="student">Student</option>
+              <option value="selfEmploy">self Employed</option>
+            </select>
+            <p>please select a your employment status</p>
+          </div>
+          <div class="hear form-input">
+            <label for="hear">How did you hear about us?</label>
+            <select name='hear' id='hear'>
+              <option value="" disabled selected>please choose from the options</option>
+              <option value="socialMedia">Social Media</option>
+              <option value="whatsapp">Whatsapp</option>
+            </select>
+            <p>please select how you heard us</p>
+          </div>
+        </form>
+      </section>
+
+    </div>
+     <footer id="footer" class="footer">
+        <div class="footer-container">
+          <div class="footer-links-wrapper">
+            <div class="quick-links foot">
+              <h2>Quick Links</h2>
+               <a href="#Home">Home</a>
+              <a href="#Tracks">Partners</a>
+              <a href="#Testimonials">FAQs</a>
+              <a href="#Testimonials">Curiculum</a>
+              <a href="#Testimonials">Terms and Conditions</a>
+            </div>
+            <div class="connect foot">
+               <h2>Connect with us</h2>
+               <a href="#">Email</a>
+               <a href="#">Blog</a>
+               <a href="#">Store</a>
+            </div>
+            <div class="office-address foot">
+              <h2>Office address</h2>
+              <p>8, Jubille-CMD Road, Magodo, Lagos</p>
+            </div>
+            <div class="follow-us foot">
+              <h2>Follow us</h2>
+              <div class="social-media">
+                <a href="#">
+                 <img src="./img/linkln.png" alt="LinkedLn">
+                </a>
+                <a href="#">
+                 <img src="./img/facebook.png" alt="Facebook">
+                </a>
+                <a href="#">
+                 <img src="./img/instagram.png" alt="instagram">
+                </a>
+                <a href="#">
+                 <img src="./img/twitter.png" alt="twitter">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="sponsors">
+            <div class="logo">
+              <img src="./img/Logo.png" alt="Logo">
+            </div>
+            <p>Powered by</p>
+            <div class="ingressive">
+              <img src="./img/ingressive.png" alt="Ingressive">
+            </div>
+          </div>
+        </div>
+      </footer>
+       <p style="text-align: center; margin:10px auto;">&copy; Zuri training <span id="copyright">2021</span></p>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

@@ -4,13 +4,30 @@ import categories from "./data.js";
 const navToggle = document.querySelector(".navToggle");
 const navContainer = document.querySelector(".nav-container");
 
-//get the why-us section parent Element
-const whyUs = document.querySelector(".why-us");
-
 navToggle.addEventListener("click", () => {
   navToggle.classList.toggle("is-active");
   navContainer.classList.toggle("show-nav-container");
 });
+
+//readmore functionality
+const dots = document.querySelector("#dots");
+const more = document.querySelector("#more");
+const readMore = document.querySelector("#readmore");
+
+readMore.addEventListener("click", () => {
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    readMore.innerHTML = "Read more";
+    more.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    readMore.innerHTML = "Read less";
+    more.style.display = "inline";
+  }
+});
+
+//get the why-us section parent Element
+const whyUs = document.querySelector(".why-us");
 
 const createTracts = () => {
   //create a div with grid-section class
@@ -35,6 +52,11 @@ const createTracts = () => {
 
   //append Tracts into why-us parent
   whyUs.appendChild(Tracts);
+
+  //use js to set copyright year
+  const year = document.querySelector("#copyright");
+  const newYear = new Date().getFullYear();
+  year.innerHTML = newYear;
 };
 
 //make this run only on ContentLoaded
